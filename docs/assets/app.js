@@ -165,5 +165,5 @@ $("modeMine").addEventListener("click",()=>setMode("mine"));$("modeAll").addEven
 ["search","breeder","type","sort"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",doSearch));
 $("closeDetail").addEventListener("click",closeDetail);$("shade").addEventListener("click",closeDetail);
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("overlay").hidden)closeDetail()});
-$("themeToggle").addEventListener("click",()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==="dark"?"light":"dark"});
+$("themeToggle").addEventListener("click",()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==="dark"?"light":"dark";document.documentElement.dataset.bsTheme=document.documentElement.dataset.theme});
 async function init(){try{const r=await fetch(SOURCE,{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);const d=await r.json();state.owned=d.strains||[];$("totalNumber").textContent=String(state.owned.length);configure();localSearch();state.loaded=true}catch(e){setStatus("Katalog nicht verfügbar: "+e.message);$("empty").hidden=false;$("empty").textContent="Der statische Katalog konnte nicht geladen werden."}}init();
