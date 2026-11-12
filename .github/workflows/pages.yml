@@ -1,0 +1,51 @@
+name: StrainDB GitHub Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: straindb-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate layout, JS and source data
+        run: |
+          node --check docs/assets/app.js
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path("docs/data/strains.json").read_text(encoding="utf-8"))
+          assert d["count"]==84 and len(d["strains"])==84
+          ids=[s["id"] for s in d["strains"]]
+          assert len(set(ids))==84
+          assert all(s["name"] for s in d["strains"])
+          assert Path("docs/index.html").exists()
+          assert Path("docs/assets/style.css").exists()
+          print("StrainDB: 84 identities; JS syntax and Pages content verified")
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
