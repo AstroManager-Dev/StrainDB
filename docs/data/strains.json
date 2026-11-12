@@ -1,0 +1,1357 @@
+{
+  "format": "straindb-public-catalog",
+  "schemaVersion": 1,
+  "updated": "2026-11-12",
+  "scope": "Breeder and strain research only; no stock, storage, inventory or personal records",
+  "source": "SeedNest curated research export",
+  "count": 84,
+  "strains": [
+    {
+      "id": "sn-mw1a4gaw-6ppyp7cn",
+      "name": "Sagrada Amnesia",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {
+        "genetics": "Original Amnesia × Panty Punch; Panty Punch: Pink Panties × Purple Punch (laut Seedstockers).",
+        "type": "Sativa-dominanter Hybrid (Herstellerangabe).",
+        "thc": "20–26 % laut Produktdaten; 24 % im Beschreibungstext. Das veröffentlichte COA nennt prominent 27,8 % Δ9-THC, in der Berichtstabelle jedoch 23,8 %; diese Abweichung ist ungeklärt.",
+        "aroma": "Zitrus und würzige Noten; der Hersteller beschreibt zusätzlich fruchtige, florale, erdige und süßliche Nuancen.",
+        "terpenes": "In der veröffentlichten Analyseprobe: β-Caryophyllen 0,262448 %, D-Limonen 0,228343 %, β-Myrcen 0,193799 %, α-Humulen 0,099636 %, α-Pinen 0,040599 % (jeweils Massenanteil). Keine Messwerte deiner Samen oder einer eigenen Charge.",
+        "description": "Feminisierte, photoperiodische Sorte von Seedstockers. Die offizielle Produktseite nennt neun Wochen Blütezeit. Ein prozentuales Indica-/Sativa-Verhältnis und ein CBD-Wert sind in den geprüften Herstellerquellen nicht angegeben. THC- und Terpenangaben beschreiben Herstellerdaten beziehungsweise eine veröffentlichte Analyseprobe, keine zugesicherten Eigenschaften jeder Pflanze. Die widersprüchlichen THC-Zahlen des COA wurden nicht rechnerisch vereinheitlicht.",
+        "ratio": "30 % Indica / 70 % Sativa (spezialisierter Seedstockers-Händler; angenäherte Sorteneinordnung, nicht genetisch gemessen; Ruderalis-Anteil bei Autoflower nicht separat beziffert).",
+        "cbd": "0–1 % CBD (Händlerangabe zu exakt dieser Seedstockers-Variante; kein chargenspezifischer Laborwert).",
+        "thcAverage": null,
+        "thcAverageMethod": null,
+        "floweringTime": "9 Wochen Blüte (photoperiodisch).",
+        "yield": "Herstellerkategorie „Massive“/sehr hoher Ertrag; keine g-Angabe."
+      },
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [
+        {
+          "url": "https://seedstockers.com/feminized-cannabis-seeds/sagrada-amnesia-feminized-cannabis-seeds",
+          "date": "2026-11-03"
+        },
+        {
+          "url": "https://seedstockers.com/img/cms/COA/certificate-of-analysis-Sagrada-Amnesia-F.pdf",
+          "date": "2026-11-03"
+        },
+        {
+          "url": "https://cannabis-seeds-outlet.co.uk/brands/seed-stockers",
+          "date": "2026-11-07"
+        }
+      ],
+      "media_links": []
+    },
+    {
+      "id": "sn-mw3o5v71-mm0a05se",
+      "name": "Chocolate Haze",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {
+        "genetics": "OG Chocolate Thai × Cannalope Haze (Royal Queen Seeds).",
+        "type": "Stark sativa-dominanter Hybrid (Herstellerangabe).",
+        "ratio": "5 % Indica / 95 % Sativa laut Royal Queen Seeds.",
+        "thc": "Bis zu 20 % laut aktuellem Hersteller-Datenblatt; kein Messwert deiner Charge.",
+        "cbd": "Niedrig laut Hersteller; kein konkreter Prozentwert angegeben.",
+        "aroma": "Schokolade, fruchtige und erdige Noten laut Hersteller.",
+        "terpenes": "Myrcen, Limonen und β-Caryophyllen (namentliche Händlerangabe von House of Seeds, nicht durch Laboranalyse dieser Sorte bestätigt).",
+        "description": "Feminisierte, photoperiodische Sorte von Royal Queen Seeds. Das aktuelle Datenblatt nennt 60 bis 70 Tage Blütezeit. Ein sortenspezifisches, laborgestütztes Terpenprofil ist in der geprüften Produktquelle nicht angegeben; einzelne Terpene wurden deshalb nicht aus dem Aroma abgeleitet. Angaben beziehen sich auf das Sortenprofil des Herstellers, nicht auf eine analysierte eigene Charge.",
+        "thcAverage": 20,
+        "thcAverageMethod": "upperBound",
+        "floweringTime": "60 bis 70 Tage Blüte.",
+        "yield": "Indoor 475–525 g/m²; Outdoor 450–500 g/Pflanze."
+      },
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [
+        {
+          "url": "https://www.royalqueenseeds.de/feminisierte-hanfsamen/311-chocolate-haze.html",
+          "date": "2026-11-05"
+        },
+        {
+          "url": "https://house-of-seeds.de/en/products/chocolate-haze-royal-queen-seeds",
+          "date": "2026-11-07"
+        }
+      ],
+      "media_links": []
+    },
+    {
+      "id": "sn-mw3ozxku-2e63we7f",
+      "name": "24k",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {
+        "genetics": "Kosher Kush × Tangie (Produktangabe von Seed Supplier).",
+        "type": "Indica-dominanter Hybrid laut Anbieter.",
+        "ratio": "60 % Indica / 40 % Sativa laut Seed Supplier.",
+        "thc": "Etwa 20 % laut Anbieter; kein Messwert deiner Charge.",
+        "cbd": "Unter 1 % laut Produktbeschreibung des Anbieters; kein Messwert deiner Charge.",
+        "aroma": "Süß, Mandarine/Zitrus und erdige Noten laut Anbieter.",
+        "terpenes": "Seed Supplier nennt Myrcen, Limonen und Caryophyllen ausdrücklich als aus Geruch und Geschmack abgeleitete, typischerweise dominante Terpene. Kein veröffentlichtes Analyseergebnis und keine Konzentrationen in der geprüften Produktquelle.",
+        "description": "Feminisierte, photoperiodische 24K-Version aus dem Sortiment von Seed Supplier. Das Datenblatt nennt 61–67 Tage Blütezeit; die grobe Zeitleiste auf derselben Seite nennt abweichend zehn Wochen. Maßgeblich für den hier erfassten Wert ist das sortenspezifische Datenblatt. Die Angaben werden nicht ungeprüft auf gleichnamige Angebote anderer Anbieter übertragen. Ein ursprünglicher Züchter ist anhand der geprüften Seite nicht eindeutig belegt.",
+        "thcAverage": 20,
+        "thcAverageMethod": "single",
+        "floweringTime": "61–67 Tage Blüte (Anbieter-Datenblatt).",
+        "yield": "Indoor mittel bis hoch; Outdoor hoch (Anbieter-Einstufung, keine Gramm-Angaben)."
+      },
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [
+        {
+          "url": "https://seedsupplier.de/products/24k",
+          "date": "2026-11-05"
+        }
+      ],
+      "media_links": []
+    },
+    {
+      "id": "sn-mw3p0sbp-lsr8jara",
+      "name": "Sangria",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {
+        "genetics": "Forbidden Fruit × (In the Pines × Pineapple Thai) laut Seed Supplier.",
+        "type": "Sativa-dominanter Hybrid laut Anbieter.",
+        "ratio": "35 % Indica / 65 % Sativa laut Seed Supplier.",
+        "thc": "22–24 % laut Anbieter; kein Messwert deiner Charge.",
+        "cbd": "Unter 1 % CBD (Angabe des Anbieters Seed Supplier; kein Laborwert dieser Charge).",
+        "aroma": "Fruchtig und süß, mit Ananas und einem Hauch Pinie laut Anbieter.",
+        "terpenes": "Seed Supplier nennt Limonen, Myrcen und Caryophyllen ausdrücklich als aus Geruch und Geschmack abgeleitete, typischerweise dominante Terpene. Kein veröffentlichtes Analyseergebnis und keine Konzentrationen in der geprüften Produktquelle.",
+        "description": "Feminisierte, photoperiodische Sangria-Version aus dem Sortiment von Seed Supplier. Das Datenblatt nennt 60–65 Tage Blütezeit. Ein verlässlicher CBD-Prozentwert ist im geprüften Seitentext nicht angegeben und bleibt offen. Angaben anderer gleichnamiger Sorten wurden nicht übernommen. Ein ursprünglicher Züchter ist anhand der geprüften Seite nicht eindeutig belegt.",
+        "thcAverage": 23,
+        "thcAverageMethod": "midpoint",
+        "floweringTime": "60–65 Tage Blüte.",
+        "yield": "Indoor mittel; Outdoor hoch (Anbieter-Einstufung ohne Grammangaben)."
+      },
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [
+        {
+          "url": "https://seedsupplier.de/products/sangria",
+          "date": "2026-11-05"
+        }
+      ],
+      "media_links": []
+    },
+    {
+      "id": "sn-16fbd0dd-b6f4-415a-b700-87ccd01fb6ca",
+      "name": "Baguio Gold",
+      "breeder": "Landrace",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {
+        "genetics": "Philippinische Sativa-Landrasse (Baguio Gold/Lemon Pine, Region Baguio); konkrete Elternlinien sind nicht dokumentiert. Referenz: The Landrace Team.",
+        "type": "Sativa-Landrasse (laut The Landrace Team); private feminisierte Samenlinie.",
+        "ratio": "Als reine Sativa eingeordnet (sortentypisch 0 % Indica / 100 % Sativa); kein genetisch bestätigtes Prozentverhältnis.",
+        "aroma": "Zitrone, Limette, Kiefer, erdige Noten und süße Ananas; einzelne Phänotypen mit Holz-, Schokoladen- oder Minznuancen (Referenzprofil The Landrace Team).",
+        "description": "Baguio Gold ist eine philippinische Sativa-Landrasse, die The Landrace Team unter anderem mit Zitrus-, Kiefern- und Ananasnoten beschreibt; dort werden 11–18 Wochen Blütezeit für die Referenzlinie genannt. Die hier erfassten Samen stammen laut Eigentümer aus einer privaten Feminisierung. Das Feld „Feminisiert“ bleibt daher erhalten. Die bekannten Eigenschaften der Ausgangssorte werden auf Wunsch als Referenzprofil übernommen, sind aber keine Laborbestätigung für die privat feminisierte Linie. THC-, CBD- und spezifische Terpenmesswerte liegen nicht verlässlich vor.",
+        "thc": "18–24 % (Drittanbieterangabe; kein überprüfbarer Laborbericht, kein Messwert der privat feminisierten Linie).",
+        "cbd": "",
+        "terpenes": "",
+        "thcAverage": 21,
+        "thcAverageMethod": "midpoint",
+        "floweringTime": "Referenz ursprüngliche Baguio-Gold-Landrasse (TLT): 11–18 Wochen Blüte; für die privat feminisierte Linie nicht bestätigt.",
+        "yield": "Referenz ursprüngliche Baguio-Gold-Landrasse: mittel bis hoch, keine Mengenangabe; für die private Linie nicht bestätigt."
+      },
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [
+        {
+          "url": "https://www.tltseeds.com/baguio-gold-philippines/",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://seedfinder.eu/de/strain-info/baguio-gold/the-landrace-team",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://www.jointcommerce.com/blog/baguio-gold-by-the-landrace-team-a-comprehensive-strain-guide",
+          "date": "2026-11-06"
+        }
+      ],
+      "media_links": []
+    },
+    {
+      "id": "sn-fcd7cf0f-04b5-4552-9b35-f2e510b315de",
+      "name": "Bola Mintz",
+      "breeder": "Anesiaseeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {
+        "genetics": "Ebola #7 × Triangle Mints (Anesia-Seeds-Sortenbeschreibung; Reihenfolge der Eltern nach SeedFinder-Wiedergabe).",
+        "type": "Sativa-dominanter Hybrid (Anesia Seeds).",
+        "ratio": "30 % Indica / 70 % Sativa (Anesia-Sortenprofil, über SeedFinder dokumentiert).",
+        "thc": "34 % und mehr laut Anesia Seeds (Herstellerwerbung; keine garantierte Analyse einer eigenen Probe).",
+        "aroma": "Süße Erdbeeren, Melone und Trauben mit einer leichten Minznote laut Anesia Seeds.",
+        "description": "Bola Mintz von Anesia Seeds vereint Ebola #7 und Triangle Mints. Der Hersteller beschreibt ein deutlich sativalastiges Profil, süß-fruchtige Aromen mit Minze und eine Blütezeit von etwa 9–10 Wochen. Die außergewöhnlich hohe THC-Angabe ist eine Herstellerbehauptung und kein Messwert dieser Samen. Ein konkreter CBD-Wert und eine belastbare Aufschlüsselung einzelner Terpene wurden nicht gefunden.",
+        "thcAverage": 34,
+        "thcAverageMethod": "single",
+        "floweringTime": "9–10 Wochen Blüte.",
+        "yield": "XXL-Ertrag (Anesia-Herstellerkategorie, keine verifizierte Menge)."
+      },
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [
+        {
+          "url": "https://anesiaseeds.com/de/product/bola-mintz/",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://seedfinder.eu/de/strain-info/bola-mintz/anesia-seeds",
+          "date": "2026-11-06"
+        }
+      ],
+      "media_links": []
+    },
+    {
+      "id": "sn-4fccfb8e-3cbd-4c9f-9f91-119339b1fcdf",
+      "name": "Rucu Cucu",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {
+        "genetics": "Tangie × OG Kush (Seedstockers, Rucu Cucu OG Feminized).",
+        "type": "Sativa-dominanter Hybrid (Seedstockers).",
+        "thc": "Bis zu 28 % laut aktuellem Seedstockers-Produktdatenblatt (Beschreibungstext nennt teils bis zu 30 %). Veröffentlichtes Hersteller-COA: 24,45 % Δ9-THC in einer untersuchten Probe.",
+        "aroma": "Kräftige Mandarine, süße Zitrusnoten, dazu erdig-holzige, gasartige OG-Kush-Akzente (Seedstockers).",
+        "terpenes": "Hersteller-COA einer einzelnen Probe (Massenanteil): D-Limonen 0,791717 %, α-Pinen 0,205960 %, β-Pinen 0,169747 %, β-Myrcen 0,121388 %, Linalool 0,105888 %. Keine Analyse deiner Charge.",
+        "description": "Rucu Cucu OG ist eine feminisierte, sativadominierte Tangie-×-OG-Kush-Kreuzung von Seedstockers, entstanden in Zusammenarbeit mit Homer el Mero Mero. Die Herstellerseite nennt rund acht Wochen Blütezeit. Für THC existieren leicht unterschiedliche Marketingwerte sowie ein separates COA; das Zertifikat bezieht sich nur auf eine Probe. Ein exaktes Indica-/Sativa-Verhältnis und ein sortenspezifischer CBD-Wert sind nicht sicher dokumentiert.",
+        "thcAverage": null,
+        "thcAverageMethod": null,
+        "ratio": "25 % Indica / 75 % Sativa (spezialisierter Seedstockers-Händler; angenäherte Sorteneinordnung, nicht genetisch gemessen; Ruderalis-Anteil bei Autoflower nicht separat beziffert).",
+        "cbd": "CBD gesamt: unter der Nachweisgrenze (<LOD) in einem Laborbericht zu Rucu Cucu OG vom 16.02.2023; keine verallgemeinerbare Konzentrationsangabe und kein Messwert dieser Samenlinie.",
+        "floweringTime": "8 Wochen Blüte.",
+        "yield": "Herstellerkategorie sehr hoch/„Massive“, keine genaue g-Angabe."
+      },
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [
+        {
+          "url": "https://seedstockers.com/feminized-cannabis-seeds/rucu-cucu-og-feminized-cannabis-seeds",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://seedstockers.com/img/cms/COA/certificate-of-analysis-Rucu-Cucu-OG-F.pdf",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://seedstockers.com/img/cms/certs/RUCU-CUCU-OG-FEM.pdf",
+          "date": "2026-11-07"
+        },
+        {
+          "url": "https://cannabis-seeds-outlet.co.uk/brands/seed-stockers",
+          "date": "2026-11-07"
+        }
+      ],
+      "media_links": []
+    },
+    {
+      "id": "sn-bb7c912f-e3af-47f6-a61a-46f64d1d05cb",
+      "name": "Special Kush 1",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {
+        "genetics": "Afghan × Kush (Royal Queen Seeds).",
+        "type": "Indica-dominanter Hybrid (Royal Queen Seeds).",
+        "ratio": "80 % Indica / 20 % Sativa laut Royal Queen Seeds.",
+        "thc": "Bis zu 17 % laut Herstellerdatenblatt; kein eigener Laborwert.",
+        "cbd": "Niedrig laut Royal Queen Seeds; keine Prozentangabe.",
+        "aroma": "Erdig, durchdringend und fruchtig laut Produktdatenblatt; herbe Haschisch-, Kiefern-, Minz- und Würznoten laut RQS-Sortenporträt.",
+        "terpenes": "Royal Queen Seeds nennt im Sortenporträt Caryophyllen, Myrcen, Pinen und Ocimen als typische Terpene. Keine sortenspezifischen Labor-Konzentrationen belegt.",
+        "description": "Special Kush 1 ist die feminisierte photoperiodische Afghan-×-Kush-Sorte von Royal Queen Seeds. Sie ist mit 80 % Indica angegeben; der Hersteller nennt rund 50–55 Tage Blütezeit und bis zu 17 % THC. Geschmacksprofil und genannte Terpene beruhen auf Herstellerdarstellungen, nicht auf der Analyse einer eigenen Probe.",
+        "thcAverage": 17,
+        "thcAverageMethod": "upperBound",
+        "floweringTime": "7–8 Wochen Blüte (ca. 50–55 Tage).",
+        "yield": "Indoor ca. 475 g/m²; Outdoor über 550 g/Pflanze (Herstellerangaben)."
+      },
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [
+        {
+          "url": "https://www.royalqueenseeds.de/feminisierte-hanfsamen/138-special-kush-1.html",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://www.royalqueenseeds.de/blog-special-kush-1-in-der-tat-eine-spezielle-indica-n42",
+          "date": "2026-11-06"
+        }
+      ],
+      "media_links": []
+    },
+    {
+      "id": "sn-1c0188df-335d-4249-906e-cb50c9f6a831",
+      "name": "Sun of a Peach",
+      "breeder": "Anesiaseeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-5a2d4ba0-2d01-424f-87e4-79ee09652332",
+      "name": "Thunder Banana",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-e88896d6-1f1d-42c2-9888-c635682de817",
+      "name": "Lemon Shining Silver Haze",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-0d04dfb5-0dfd-4ef0-8c81-650d31ca59ee",
+      "name": "Sundea Driver",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-17a4c1df-68f2-4993-afda-24fc2333cbdd",
+      "name": "Mountaintop Mint",
+      "breeder": "Humboldt Seed Company",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-6514dc6d-74bc-46dc-9436-896f039763ce",
+      "name": "Gelato 44",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-92f8e089-4da4-4dc8-8b4c-716dffce4daf",
+      "name": "Cherry Pie Fast",
+      "breeder": "Advanced Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-7a295237-7983-4f89-aa50-e4a2734cc6c9",
+      "name": "Cookies Gelato",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-44a0bcfd-9f6d-4e8e-87bb-0ff69fdf667a",
+      "name": "Purple Queen",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-a7e3dc04-80d0-468f-af54-5e30a6004a53",
+      "name": "Special Queen 1",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-36b7f2c9-0918-41ee-884e-7801bb194499",
+      "name": "Fruit Spirit",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-d70f5792-a4f0-413f-8041-0855877498d3",
+      "name": "Biscotti Zkittlez",
+      "breeder": "00Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-9d1c2600-0a5d-4a1a-a17a-16095bc8846e",
+      "name": "Buddha Auto Skunk",
+      "breeder": "Buddha Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-e18a203b-1be8-447f-9dd5-6d30de5b4e08",
+      "name": "Spooky OG",
+      "breeder": "Pure Instinto",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-3400c1ae-fc92-4f44-b66b-76b6f8b422d2",
+      "name": "Royal Gorilla",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-9001f691-62d8-4163-8711-a6c7041ac4f4",
+      "name": "Haze Berry",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-219a9e4e-13ef-4ca8-b8b4-5ddadb127d05",
+      "name": "Apple Fritter",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-6c351f0d-b25c-4c5c-96c6-8c5d6d6157ad",
+      "name": "Auto Critical Mass",
+      "breeder": "Advanced Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-1eb70620-0dd8-4cf1-9c44-e445b6be9cb5",
+      "name": "NYC Sour D",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-f6ec6e66-2bce-4e45-a19b-cdfac339ace6",
+      "name": "Black Orchid",
+      "breeder": "Original Sensible Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-26861198-2866-4dad-ae7f-769119a83bfc",
+      "name": "Mac 2 x Mac 2 Auto",
+      "breeder": "Pure Instinto",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-de2a5fc4-c1bd-42f9-82cc-8020ba2a9cc8",
+      "name": "Kera Gorilla Glue",
+      "breeder": "Kera California",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-ced31cf2-133a-4d9c-af0f-ff27c0687a63",
+      "name": "Quick One",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-faacf93c-ab0c-4b5a-aa32-8f4fc1fac4e8",
+      "name": "Royal Haze",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-3f58d6de-7977-48da-a029-568373ff5485",
+      "name": "Green Gelato",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-212c62b4-d8a5-4540-b6cc-af73df5d643e",
+      "name": "Titan F1",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-fb783e47-e996-48cf-bdcd-65df9e87f933",
+      "name": "Epsilon F1",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-1d8c8402-3d4b-4fdb-b520-e219ee21e248",
+      "name": "Bruce Banner 3 Auto",
+      "breeder": "Growers Choice",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-0392c3a6-f960-4751-8caa-344423497739",
+      "name": "White Widow",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-8fa366a6-045b-4f94-8dc9-95eb35acb5e1",
+      "name": "North Thunderfuck",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-57e73182-f704-42ac-b4ac-9894b82fea0d",
+      "name": "Wham Boom Auto",
+      "breeder": "Anesiaseeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-bfbd3287-1f06-4f1d-b249-3188c6367bd0",
+      "name": "Jack Herer",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-8d2116c5-7564-4036-9e0b-23d3a090b488",
+      "name": "Royal Kush",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-bb02df4a-39b3-4d69-bcb6-c2d0dc7cd09b",
+      "name": "Purple Lemonade",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-d2465846-45c9-4335-98e2-b07d98debf50",
+      "name": "BCN Critical XXL",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-88c8bb62-7fb1-4f8c-875e-95c0ad2a0674",
+      "name": "Cookies Gelato",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-78d2cc13-6df0-49bc-adb0-66dbe066a1d5",
+      "name": "Panty Punsch",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-209c3759-a810-4461-9f2d-67d5a2c1c057",
+      "name": "Purple Punch",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-8c3ebfc1-7a5a-49da-ad15-1e44512e7ee0",
+      "name": "Apollo Black Cherry",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-329e77fe-7210-4836-86ed-2aa7289cb8dd",
+      "name": "Jelly Donutz",
+      "breeder": "Humboldt Seed Company",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-73790995-76bc-4608-8a0e-0f04cdf321e1",
+      "name": "Special Queen 1",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-90cbb36b-4ca9-44e8-950f-f816c15f12f0",
+      "name": "Hyperion F1",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-93971f62-6ea5-4af2-ac35-b1fa9f266231",
+      "name": "Wedding Cake",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-ccca4c88-d68b-41c9-afe5-ecc3fbe10692",
+      "name": "Fat Banana",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-f33c34f1-2a76-4355-b85e-59d5539dabde",
+      "name": "Thunder Banana",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-146c19e7-1704-4393-a736-6d1147add398",
+      "name": "Orion F1",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-06e89e5c-e9cc-45a1-b92b-d8d35375ee4c",
+      "name": "Spicy Temptation GPP",
+      "breeder": "Terpyz",
+      "sex": "Regulär",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-1e593b14-289d-4fdd-8a42-e753a71dedd8",
+      "name": "Pine Tar Croco",
+      "breeder": "Terpyz",
+      "sex": "Regulär",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-6ff6f0b0-81ca-49df-a2c2-6c1d8949f2d1",
+      "name": "Zen - X SWAG",
+      "breeder": "Terpyz",
+      "sex": "Regulär",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-00bfa4ec-830b-45dc-ad77-1fd70618b499",
+      "name": "Moby Dick",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-8ff6bd55-7110-4d4c-b117-09f94c9bbed9",
+      "name": "Cereal Milk",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-c9213c4c-3112-4f58-aecc-eb661468e898",
+      "name": "Super Silver Haze",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-2f803b10-fc6e-4a9e-9fae-71e470be79ce",
+      "name": "Permanent Marker",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-a68ea2f2-0044-43d4-8328-612714297713",
+      "name": "Gorilla Glue Auto",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-d0e4a3b6-646a-48d4-9a88-f5d87b53af2c",
+      "name": "Chocolope Auto",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-d6d257af-c5a0-49a1-9995-d1c40d5a84a5",
+      "name": "Super Lemon Haze",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-2e4a17d1-8977-4a35-a65c-e1f215ca743c",
+      "name": "Tangerine Dream",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-f07b9072-c06f-48a7-a3bf-08464d3a0650",
+      "name": "Kosuga",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-8c3772a7-9ef5-4b7a-a9e7-535763f283b7",
+      "name": "Pineapple Fruz",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-9982aa0b-38e4-4346-90aa-ba459b696f68",
+      "name": "Rocket Runtz",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-cbd48742-f619-4cdd-aa6e-f45c725d3fb3",
+      "name": "Moon Runtz",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-c4d0d0b4-1f03-483b-b7b6-71d851cfd807",
+      "name": "Frosty Fritter",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-59d5035f-7758-46f2-ad6c-353394cdc38a",
+      "name": "Gush Mints",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-42959efd-397d-400b-b059-de8395315ffc",
+      "name": "Blackberry Gum",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-160d1579-6ae3-45da-b91f-558c79abc069",
+      "name": "Santa Marta Haze",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-0add70b3-b28d-48c6-8392-e077081e4a53",
+      "name": "GG#4",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-e022c2b1-b162-4ea5-bf59-b3e743238646",
+      "name": "Gelato 41",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-dd4f7e2c-a55e-46c2-98af-6ab378d252ab",
+      "name": "Super Skunk",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-be346228-27fb-4ae4-b76c-47fcf700783f",
+      "name": "Big Bud",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-e7c97cf9-0601-4cb1-9e44-5365f9f10af7",
+      "name": "Amnesia",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-764fb4b5-6533-4c8e-832b-89d879214245",
+      "name": "Bruce Banner",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-33e2557d-273a-4926-a947-ce8513dc41b7",
+      "name": "Sour Diesel",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-741ed066-0981-4393-8337-2f04cd614bb4",
+      "name": "Gorilla Cookies",
+      "breeder": "Seedstockers",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-932a27fb-0d64-4b31-a437-df5013ec6513",
+      "name": "Australien Bastard",
+      "breeder": "Unbekannt",
+      "sex": "Regulär",
+      "flowering": "Photoperiodisch",
+      "info": {
+        "genetics": "Historische Australian Bastard Cannabis (ABC)-Linie aus Australien. Konkrete Elternpflanzen und Vorfahren sind nicht dokumentiert; keine belegte Kreuzungsformel. Moderne ABC-Kreuzungen nicht mit der Ursprungslinie gleichsetzen.",
+        "type": "Cannabis mit ausgeprägter ABC-Blattmutation; keine belastbare Indica-/Sativa-Prozentzuordnung.",
+        "ratio": null,
+        "thc": "Historische Augenzeugenberichte bezeichnen ursprüngliche ABC als vergleichsweise wenig potent. Für diese konkrete Samenlinie liegt kein geprüfter THC-Laborwert vor; veröffentlichte Zahlen anderer Linien/Hybriden nicht übertragbar.",
+        "thcAverage": null,
+        "thcAverageMethod": null,
+        "cbd": "Kein verifizierter CBD-Prozentwert für diese Linie. Historische Vermutungen über CBD/CBN und Laborwerte von ABCh-Hybriden sind keine Messung der Original-ABC.",
+        "aroma": "Für die historische Original-ABC kein belastbares sortenübergreifendes Aromaprofil dokumentiert. Zitrone, Banane und Schokolade sind Anbieterangaben zur modernen ABC-Linie von KalySeeds und werden nicht übernommen.",
+        "terpenes": "Kein belastbares Terpen-Laborprofil für Original-ABC. Analysen des ABC×Purple-Skunk-Hybriden (ABCh) sind nicht identisch.",
+        "floweringTime": "Historische Berichte nennen kein verlässlich übertragbares Blütezeitfenster für die Ursprungslinie. Photoperiodisch gemäß SeedNest-Bestand.",
+        "yield": "Keine verlässliche Ertragsangabe für Original-ABC. Mengen aus ABC×Flo-Versuchen sind nicht auf ABC übertragbar.",
+        "description": "Australian Bastard Cannabis (ABC) ist eine seit 1999 unter diesem Namen dokumentierte australische Cannabislinie mit auffallend kleinen, untypisch gegliederten, teils petersilienartigen Blättern und buschig-strauchigem Erscheinungsbild. Historische Beobachter beschrieben sie als relativ frosthart und wenig potent. Ihre ursprünglichen Elternlinien, der erste Züchter sowie chargenbezogene THC-, CBD- und Terpenwerte sind nicht nachgewiesen. Später entstanden zahlreiche ABC-Hybriden; deren Werte gelten nicht automatisch für diese reguläre, photoperiodische ABC-Samenlinie."
+      },
+      "origin": {
+        "original_breeder": "Nicht dokumentiert",
+        "origin_region": "Australien",
+        "line": "Australian Bastard Cannabis (ABC), historische australische Ursprungslinie",
+        "naming_credit": "Cannabis Culture / Dana Larsen (1999)",
+        "early_custodian": "Mr Ayers (früher Bewahrer, nicht belegter ursprünglicher Züchter)",
+        "note": "MongyMan, KalySeeds, TerpyZ und weitere bearbeiteten später ABC-Linien; keine belegte Identifikation des ursprünglichen Züchters dieser konkreten Samencharge.",
+        "verification_status": "historical_sources_confirm_origin_not_original_breeder"
+      },
+      "lineage": {
+        "identity": "Australian Bastard Cannabis (ABC), historische Ursprungslinie",
+        "parents": [],
+        "original_parentage": "unbekannt",
+        "family_tree_reference": "https://mutant.farm/mutant-map/abc/",
+        "related_descendants": [
+          {
+            "name": "ABC × Flo",
+            "relationship": "documented hybrid descendant, not a parent",
+            "source_url": "https://www.cannabisculture.com/content/2005/06/13/4292/"
+          },
+          {
+            "name": "ABCh (ABC × Purple Skunk Oregon)",
+            "relationship": "research hybrid, not a parent",
+            "source_url": "https://medicinalgenomics.com/australian-bastard/"
+          }
+        ],
+        "source_confidence": "historical lineage documented; original parents unknown"
+      },
+      "characteristics": {
+        "leaf_morphology": "Kleine, untypisch gegliederte, petersilien-/krautartig wirkende Blätter statt der üblichen Fächerblätter",
+        "growth_form": "Stark verzweigt, eher strauchförmig; historische Beschreibung der Originalpflanzen",
+        "hardiness": "In historischen Beobachtungen frosttolerant; nicht als geprüfte Eigenschaft dieser Samencharge bestätigt",
+        "mutation": "ABC-Morphologie wird in Breeder-Dokumentationen als überwiegend rezessiv vererbtes Blattmerkmal beschrieben; nicht als eigene Cannabis-Art klassifiziert"
+      },
+      "sources": [
+        {
+          "url": "https://www.cannabisculture.com/content/1999/06/28/151/",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://www.cannabisculture.com/content/1999/08/01/1485/",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://www.cannabisculture.com/content/2000/08/18/1651/",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://www.cannabisculture.com/content/2005/06/13/4292/",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://medicinalgenomics.com/australian-bastard/",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://mutant.farm/mutant-map/abc/",
+          "date": "2026-11-12"
+        },
+        {
+          "url": "https://onlineshop.kalyseeds.eu/de/content/11-abc-australien-bastard-cannabis-",
+          "date": "2026-11-12"
+        }
+      ],
+      "media_links": []
+    },
+    {
+      "id": "sn-be530d2c-bccd-48bf-81d7-9feb5b8995d8",
+      "name": "Cheese",
+      "breeder": "Seed Supplier",
+      "sex": "Feminisiert",
+      "flowering": "Photoperiodisch",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    },
+    {
+      "id": "sn-e93e84ec-b9a3-406c-8fc1-274825b6e701",
+      "name": "Tropicana Cookies Purple Auto",
+      "breeder": "Royal Queen Seeds",
+      "sex": "Feminisiert",
+      "flowering": "Autoflower",
+      "info": {},
+      "origin": null,
+      "lineage": null,
+      "characteristics": null,
+      "sources": [],
+      "media_links": []
+    }
+  ]
+}
