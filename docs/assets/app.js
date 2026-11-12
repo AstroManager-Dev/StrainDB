@@ -42,15 +42,120 @@ function sourceView(s){const links=s.sources||[];return '<section class="section
 function keyTree(v,key="",depth=0){if(depth>12)return'<span class="muted">Verschachtelung begrenzt</span>';if(v===null||v===undefined)return'<span class="muted">null</span>';if(typeof v!=="object")return esc(readable(v));const items=Object.entries(v);if(!items.length)return'<span class="muted">'+(Array.isArray(v)?"[]":"{}")+'</span>';return items.map(([k,x])=>'<details class="kv" '+(depth<1?'open':'')+'><summary>'+esc(Array.isArray(v)?"["+k+"]":label(k))+'</summary><div class="kv-value">'+keyTree(x,k,depth+1)+'</div></details>').join("")}
 function ownOverview(s){const info=s.info||{};return '<section class="section"><h3>Belegte Sortendaten</h3>'+factGrid(info)+'</section>'+(info.description?'<section class="section"><h3>Beschreibung</h3><p class="description">'+esc(info.description)+'</p></section>':'')+'<section class="section"><h3>Herkunft</h3>'+factGrid(s.origin||{})+'</section>'}
 function ownGenetics(s){const lin=s.lineage||{},info=s.info||{},text=info.genetics||lin.raw_genetics||lin.original_parentage||"Elternlinien bislang nicht belegt";const parents=(lin.parents||[]).filter(Boolean);return '<section class="section"><h3>Eltern-Genetik</h3><div class="tree"><div class="parents">'+(parents.length?parents.map(p=>'<div class="node">'+esc(p.name||p)+'</div>').join(""):'<div class="node muted">Eltern nicht einzeln nachgewiesen</div>')+'</div><span>↓</span><div class="node">'+esc(s.name)+'</div></div><p class="description">'+esc(text)+'</p></section>'+(s.lineage?'<section class="section"><h3>Weitere Abstammungsdaten</h3>'+keyTree(s.lineage)+'</section>':'')}
-function liveSection(){let prefix='<a class="attribution" href="https://cannalib.org" target="_blank" rel="noopener noreferrer">Data by CannaLib</a>';
-const st=state.apiStatus;if(st==="loading")return prefix+'<div class="api-status">Live-Daten werden von CannaLib geladen …</div>';if(st==="error")return prefix+'<div class="api-status error">API-Abruf fehlgeschlagen. Mögliche Ursachen: Rate-Limit, CORS, Netzproblem oder unbekannter Datensatz. Details: '+esc(state.api?.error||"")+'</div><div class="api-actions"><button id="retryAPI">Erneut abrufen</button></div>';
-if(st==="unmatched")return prefix+'<div class="api-status">Kein eindeutig zuordenbarer Treffer für Name und Breeder. Du kannst über die globale CannaLib-Suche nach Varianten suchen.</div>';
-if(st!=="ready"||!state.api)return prefix+'<div class="api-status">Noch keine API-Daten abgerufen.</div>';
-const data=state.api, summary=state.selected?{name:state.selected.name,breeder:state.selected.breeder}:null;
-return prefix+(state.selected?'<div class="api-status '+(state.selected.apiMatch?"ok":"")+'">'+(state.selected.apiMatch?"Name und Breeder im Suchtreffer bestätigt.":"Trefferidentität bitte prüfen; Namen können mehrere Varianten umfassen.")+'</div>':'')+'<section class="section"><h3>Alle gelieferten API-Felder</h3><p class="muted small">Dynamische, vollständige Ansicht einschließlich evidence, branches, sources, chemistry, lineage und Medienmetadaten, soweit von CannaLib geliefert.</p>'+keyTree(data)+'</section><section class="section"><h3>Original-JSON (nur aktuelle Sitzung)</h3><details><summary>Rohdaten anzeigen</summary><pre class="json-view">'+esc(JSON.stringify(data,null,2))+'</pre></details></section>'
+
+/* Bootstrap-backed, end-user-friendly display for all live fields.
+   CannaLib data stays in page memory only. The complete API object
+   remains available in collapsed technical details for development. */
+const niceLabels = {
+  name:"Sortenname",name_norm:"Sortenkennung",breeder:"Breeder",breeders:"Breeder",
+  origin:"Herkunft",origins:"Herkunft",country:"Land",region:"Region",aliases:"Weitere Namen",
+  genetics:"Genetik",lineage:"Abstammung",parents:"Elternpflanzen",descendants:"Nachkommen",
+  ancestors:"Vorfahren",branches:"Varianten und Zuchtlinien",crosses:"Kreuzungen",
+  thc:"THC",cbd:"CBD",cbg:"CBG",cbn:"CBN",thcv:"THCV",cbdv:"CBDV",
+  cannabinoid:"Cannabinoid",cannabinoids:"Cannabinoide",chemistry:"Chemische Analyse",
+  potency:"Wirkstoffgehalt",terpenes:"Terpene",terpene_profile:"Terpenprofil",
+  aroma:"Aroma",aromas:"Aromen",flavors:"Geschmack",flavor:"Geschmack",
+  effects:"Wirkungen",effect:"Wirkung",medical:"Medizinische Angaben",
+  indica:"Indica",sativa:"Sativa",ruderalis:"Ruderalis",
+  indica_percent:"Indica-Anteil (%)",sativa_percent:"Sativa-Anteil (%)",
+  flowering:"Blütetyp",flowering_time:"Blütezeit",flowering_days:"Blütezeit (Tage)",
+  flowering_weeks:"Blütezeit (Wochen)",yield:"Ertrag",height:"Pflanzenhöhe",
+  height_cm:"Pflanzenhöhe (cm)",harvest:"Ernte",cultivation:"Pflanzeneigenschaften",
+  description:"Beschreibung",summary:"Zusammenfassung",notes:"Anmerkungen",
+  awards:"Auszeichnungen",cups:"Wettbewerbe",sources:"Quellen",source:"Quelle",
+  references:"Referenzen",evidence:"Belege",media:"Medien",images:"Bilder",
+  pictures:"Bilder",photos:"Fotos",url:"Link",link:"Link",
+  confidence:"Verlässlichkeit",verification:"Überprüfung",status:"Status",
+  updated_at:"Aktualisiert",created_at:"Erstellt",id:"ID"
+};
+const friendlyLabel=k=>niceLabels[k]||label(k);
+const groupDefs=[
+  {title:"Genetik & Herkunft",icon:"diagram-3",re:/^(genetic|lineage|parent|child|descendant|ancestor|offspring|cross|branch|breeder|origin|country|region|indica|sativa|ruderalis|type$|aliases|strain_type)/i},
+  {title:"Cannabinoide & Terpene",icon:"droplet",re:/^(thc|cbd|cbg|cbn|thcv|cbdv|cannabinoid|terpene|chem|lab|potency|compound|profile|analysis|test|thc_|cbd_)/i},
+  {title:"Aroma & Wirkungen",icon:"flower1",re:/^(aroma|flavor|taste|effect|medical|smell|fragrance|sensory)/i},
+  {title:"Blüte, Ertrag & Pflanzenprofil",icon:"leaf",re:/^(flower|harvest|yield|height|plant|cultivation|growth|seed|auto|photoperiod|climate|indoor|outdoor)/i},
+  {title:"Beschreibung & Besonderheiten",icon:"journal-text",re:/^(description|summary|note|about|history|background|award|cup|category|classification)/i},
+  {title:"Quellen, Nachweise & Medien",icon:"link-45deg",re:/^(source|reference|citation|evidence|url|link|media|picture|image|photo|video|license|attribution|credit)/i}
+];
+function scalarText(v){
+  if(v===null||v===undefined||v==="")return '<span class="text-secondary">Nicht angegeben</span>';
+  if(typeof v==="boolean")return v?"Ja":"Nein";
+  const str=typeof v==="number"?new Intl.NumberFormat("de-DE",{maximumFractionDigits:5}).format(v):String(v);
+  const url=safeURL(str);
+  return url?'<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(new URL(url).hostname)+'</a>':esc(str);
 }
-function liveOverlay(s){if(state.apiStatus!=="ready")return "";const data=state.api;let attrs=data&&typeof data==="object"?{...data}:null;if(!attrs)return"";delete attrs.evidence;delete attrs.branches;delete attrs.sources;delete attrs.media;delete attrs.pictures;return '<section class="section"><h3>CannaLib · Live-Überblick</h3><a class="attribution" href="https://cannalib.org" target="_blank" rel="noopener noreferrer">Data by CannaLib</a>'+keyTree(attrs)+'</section>'}
-function detailRender(){const s=state.selected;if(!s)return;const content=$("detailContent");const tab=state.activeTab;if(tab==="overview")content.innerHTML=(state.mode==="mine"?ownOverview(s):'<p class="muted">Öffentliche CannaLib-Daten werden live nachgeladen.</p>')+liveOverlay(s);else if(tab==="genetics")content.innerHTML=(state.mode==="mine"?ownGenetics(s):"")+((state.apiStatus==="ready")?'<section class="section"><h3>CannaLib · Abstammungsdaten</h3>'+keyTree({lineage:state.api.lineage,branches:state.api.branches,evidence:state.api.evidence?.lineage})+'</section>':'<p class="muted">CannaLib-Genetik wird live geladen, soweit verfügbar.</p>');else if(tab==="sources")content.innerHTML=(state.mode==="mine"?sourceView(s):"")+(state.apiStatus==="ready"?'<section class="section"><h3>CannaLib-Quellen und Nachweise</h3><a class="attribution" href="https://cannalib.org" target="_blank" rel="noopener noreferrer">Data by CannaLib</a>'+keyTree({sources:state.api.sources,evidence:state.api.evidence})+'</section>':'');else content.innerHTML=liveSection();const retry=$("retryAPI");if(retry)retry.addEventListener("click",()=>loadLive(s,true))}
+function valueView(v,depth=0){
+  if(depth>7)return '<span class="text-secondary">Weitere Ebenen unter „Technische Details“</span>';
+  if(v===null||v===undefined||v==="")return '<span class="text-secondary">Nicht angegeben</span>';
+  if(Array.isArray(v)){
+    if(!v.length)return '<span class="text-secondary">Keine Angaben</span>';
+    if(v.every(x=>x===null||typeof x!=="object"))
+      return '<div class="d-flex flex-wrap gap-2">'+v.map(x=>'<span class="badge rounded-pill value-chip">'+scalarText(x)+'</span>').join("")+'</div>';
+    return '<div class="d-grid gap-2">'+v.map((x,i)=>'<div class="nested-entry"><span class="tiny text-secondary">Eintrag '+(i+1)+'</span>'+valueView(x,depth+1)+'</div>').join("")+'</div>';
+  }
+  if(typeof v==="object"){
+    const pairs=Object.entries(v).filter(([k,x])=>x!==undefined&&x!==null&&x!==""&&!(Array.isArray(x)&&!x.length));
+    if(!pairs.length)return '<span class="text-secondary">Keine Angaben</span>';
+    return '<dl class="row g-2 mb-0">'+pairs.map(([k,x])=>'<div class="col-12 col-md-6"><div class="nested-entry h-100"><dt class="field-name">'+esc(friendlyLabel(k))+'</dt><dd class="field-value mb-0">'+valueView(x,depth+1)+'</dd></div></div>').join("")+'</dl>';
+  }
+  return scalarText(v);
+}
+function sectionView(title,pairs){
+  if(!pairs.length)return "";
+  return '<section class="mb-4"><h3 class="h6 fw-bold mb-3">'+esc(title)+'</h3><div class="row g-3">'+pairs.map(([k,v])=>'<div class="col-12 col-md-6"><div class="card data-card h-100"><div class="card-body"><div class="field-name">'+esc(friendlyLabel(k))+'</div><div class="field-value">'+valueView(v)+'</div></div></div></div>').join("")+'</div></section>';
+}
+function groupedData(data,filter="all"){
+  if(!data||typeof data!=="object")return '<div class="alert alert-secondary">Keine strukturierten Daten verfügbar.</div>';
+  const content=data.data && typeof data.data==="object" && !Array.isArray(data.data) && Object.keys(data).length<4?data.data:data;
+  const all=Object.entries(content).filter(([k,v])=>v!==null&&v!==undefined&&v!==""&&!(Array.isArray(v)&&!v.length));
+  const used=new Set();let html="";
+  for(const g of groupDefs){
+    if(filter==="genetics"&&g.title!=="Genetik & Herkunft")continue;
+    if(filter==="sources"&&g.title!=="Quellen, Nachweise & Medien")continue;
+    if(filter==="overview"&&["Quellen, Nachweise & Medien"].includes(g.title))continue;
+    const found=all.filter(([k])=>g.re.test(k));
+    found.forEach(([k])=>used.add(k));
+    html+=sectionView(g.title,found);
+  }
+  if(filter==="all"||filter==="overview"){
+    const rest=all.filter(([k])=>!used.has(k));
+    if(rest.length)html+=sectionView("Weitere Sorteninformationen",rest);
+  }
+  return html||'<div class="alert alert-secondary">Zu diesem Bereich wurden keine Werte übermittelt.</div>';
+}
+function liveHeader(){
+  return '<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3"><span class="badge text-bg-success">Live-Daten</span><a class="small" target="_blank" rel="noopener noreferrer" href="https://cannalib.org">Data by CannaLib</a></div>';
+}
+function liveNotice(){
+  if(state.apiStatus==="loading")return '<div class="alert alert-info" role="status"><span class="spinner-border spinner-border-sm me-2"></span>Live-Daten werden geladen …</div>';
+  if(state.apiStatus==="error")return '<div class="alert alert-warning" role="alert">CannaLib konnte nicht geladen werden: '+esc(state.api?.error||"Unbekannter Fehler")+'<div class="mt-2"><button class="btn btn-outline-warning btn-sm" id="retryAPI">Erneut versuchen</button></div></div>';
+  if(state.apiStatus==="unmatched")return '<div class="alert alert-warning">Für diesen Sortennamen gibt es keinen eindeutig bestätigten Treffer. Eine Breeder-Zuordnung muss geprüft werden.</div>';
+  return "";
+}
+function consumerLive(filter="all"){
+  let output=liveHeader()+liveNotice();
+  if(state.apiStatus!=="ready"||!state.api)return output;
+  if(state.selected && state.mode==="mine")
+    output+='<div class="alert '+(state.selected.apiMatch?"alert-success":"alert-warning")+' small">'+(state.selected.apiMatch?"Name und Breeder wurden abgeglichen.":"Achtung: Der Name stimmt überein, aber der Breeder wurde nicht bestätigt. Die Werte können zu einer anderen Variante gehören.")+'</div>';
+  output+=groupedData(state.api,filter);
+  if(filter==="all")output+='<div class="accordion mt-4" id="techAccordion"><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rawAPIPanel" aria-expanded="false" aria-controls="rawAPIPanel">Technische Details / vollständiges JSON</button></h3><div id="rawAPIPanel" class="accordion-collapse collapse" data-bs-parent="#techAccordion"><div class="accordion-body"><p class="small text-secondary">Nur für Entwickler. Diese Daten werden nicht dauerhaft gespeichert.</p><pre class="json-view">'+esc(JSON.stringify(state.api,null,2))+'</pre></div></div></div></div>';
+  return output;
+}
+function detailRender(){
+  const s=state.selected;if(!s)return;
+  const tab=state.activeTab,content=$("detailContent");
+  if(tab==="overview"){
+    content.innerHTML=(state.mode==="mine"?ownOverview(s):"")+consumerLive("overview");
+  }else if(tab==="genetics"){
+    content.innerHTML=(state.mode==="mine"?ownGenetics(s):"")+consumerLive("genetics");
+  }else if(tab==="sources"){
+    content.innerHTML=(state.mode==="mine"?sourceView(s):"")+consumerLive("sources");
+  }else{
+    content.innerHTML='<div class="mb-3"><h3 class="h5 fw-bold">Alle CannaLib-Informationen</h3><p class="text-secondary small">Übersichtlich nach Themen gruppiert. Es werden nur tatsächlich übertragene Werte angezeigt.</p></div>'+consumerLive("all");
+  }
+  const retry=$("retryAPI");if(retry)retry.addEventListener("click",()=>loadLive(s,true));
+}
+
 async function loadLive(s,force=false){const token=++state.requestToken;state.api=null;state.apiStatus="loading";detailRender();try{let url=null;if(state.mode==="all")url=apiUrlFor(s);else{const query=await getAPI(API+"/v1/catalogs/strains?q="+encodeURIComponent(s.name)+"&limit=10");if(token!==state.requestToken)return;const matches=records(query).filter(x=>norm(x.name)===norm(s.name));let exact=matches.filter(x=>norm(x.breeder)===norm(s.breeder));if(exact.length===1){s.apiMatch=true;url=apiUrlFor(exact[0]);}else if(matches.length===1){s.apiMatch=false;url=apiUrlFor(matches[0]);}else{state.apiStatus="unmatched";detailRender();return}}if(!url){state.apiStatus="unmatched";detailRender();return}const details=await getAPI(url);if(token!==state.requestToken)return;state.api=details;state.apiStatus="ready";detailRender()}catch(e){if(token!==state.requestToken)return;state.api={error:e.message};state.apiStatus="error";detailRender()}}
 function openDetail(s){state.selected=s;state.apiStatus="idle";state.api=null;state.activeTab="overview";$("detailTitle").textContent=s.name||"Sortenprofil";$("detailBreeder").textContent=s.breeder||"Breeder nicht angegeben";const t=statusTag(s);$("detailBadges").innerHTML='<span class="pill">'+esc(t.text)+'</span>'+(s.sex?'<span class="pill">'+esc(s.sex)+'</span>':'')+'<span class="pill">'+(state.mode==="mine"?"Eigene Sammlung":"CannaLib-Suche")+'</span>';$("overlay").hidden=false;document.body.style.overflow="hidden";$("closeDetail").focus();setTab("overview");loadLive(s)}
 function closeDetail(){state.requestToken++;state.api=null;state.selected=null;state.apiStatus="idle";$("detailContent").replaceChildren();$("overlay").hidden=true;document.body.style.overflow=""}
