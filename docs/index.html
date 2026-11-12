@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101713">
+<meta name="description" content="StrainDB – realer Cannabis-Sortenkatalog mit 84 SeedNest-Rechercheprofilen, Genetik, Breeder und optionalen Live-API-Abfragen.">
+<title>StrainDB · SeedNest Sortenkatalog</title>
+<link rel="stylesheet" href="./assets/style.css">
+<script defer src="./assets/app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <a href="./" class="brand" aria-label="StrainDB Startseite"><span class="brand-icon">✳</span><span>Strain<span class="accent">DB</span><small>SEEDNEST RESEARCH</small></span></a>
+  <div class="head-actions"><span class="top-label">DEVELOPER PREVIEW</span><button id="themeToggle" class="icon-button" aria-label="Design wechseln">◐</button></div>
+</header>
+<main class="shell">
+  <section class="hero">
+    <div><div class="eyebrow">SORTENBIBLIOTHEK · LIVE RESEARCH</div><h1>Jede Genetik.<br><span class="gradient">Alle Details.</span></h1><p>Entdecke deine recherchierten Sorten, vergleiche Breeder und erkunde die Abstammung. Dokumentierte Werte statt erfundener Angaben.</p></div>
+    <div class="hero-count"><strong id="totalNumber">84</strong><span>SORTEN IM KATALOG</span><span class="hero-line">↗ SeedNest Developer Preview</span></div>
+  </section>
+  <section class="controls" aria-label="Katalogfilter">
+    <div class="searchwrap"><span>⌕</span><input id="search" type="search" placeholder="Sorte, Breeder, Genetik suchen …" aria-label="Sorten suchen" autocomplete="off"></div>
+    <select id="breeder" aria-label="Breeder"><option value="">Alle Breeder</option></select>
+    <select id="type" aria-label="Samenart"><option value="">Alle Arten</option><option value="auto">Autoflower feminisiert</option><option value="fem">Photoperiodisch feminisiert</option><option value="reg">Photoperiodisch regulär</option></select>
+    <select id="sort" aria-label="Sortieren"><option value="name">Name A–Z</option><option value="breeder">Breeder A–Z</option></select>
+  </section>
+  <div class="results"><span id="resultCount">Katalog wird geladen …</span><span class="result-note">Externe API-Daten werden nur bei der Detailansicht angefragt</span></div>
+  <div id="cards" class="cards" aria-live="polite"></div>
+  <p id="empty" class="empty" hidden>Keine passenden Sorten gefunden. Versuche einen anderen Suchbegriff.</p>
+</main>
+<div class="overlay" id="overlay" hidden>
+ <div class="shade" id="shade"></div>
+ <article class="detail" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+   <div class="detail-head"><div><span class="eyebrow">STRAIN PROFILE</span><h2 id="detailTitle">Sortenprofil</h2><p id="detailBreeder"></p></div><button id="closeDetail" class="close-button" aria-label="Schließen">×</button></div>
+   <div class="detail-body">
+    <div id="detailBadges" class="badges"></div>
+    <nav class="tabs" aria-label="Profildaten"><button class="active" data-tab="overview">Übersicht</button><button data-tab="genetics">Genetik</button><button data-tab="sources">Quellen</button><button data-tab="live">Live-API</button></nav>
+    <div id="detailContent"></div>
+   </div>
+ </article>
+</div>
+<footer class="footer"><span>StrainDB · SeedNest Research Preview</span><span>Quellengebundene Informationen · Keine Bestandsdaten · API-Daten nur sitzungsbezogen</span></footer>
+</body></html>
